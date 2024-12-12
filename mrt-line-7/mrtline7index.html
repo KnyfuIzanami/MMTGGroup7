@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+main {
+opacity: 0.9;
+}
+
+
+.lrt-map {
+    text-align: center;
+    background-color: transparent; /* Make background transparent */
+    padding: 0; /* Remove padding if any */
+    margin: 0; /* Remove margin if any */
+    border: none; /* Remove any borders */
+}
+
+/* Ensure the station menu does not have a background or extra padding */
+.station-menu {
+    background-color: rgba(0, 0, 0, 0.6);; /* Remove any solid background */
+    padding: 0; /* Remove padding if any */
+    margin: 0; /* Remove margin if any */
+    text-align: center;
+}
+
+/* Ensure the header does not have a solid background */
+header {
+    background-color: transparent; /* No solid color */
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Spacing between buttons */
+    margin-top: 10px; /* Adjust spacing as needed */
+}
+
+/* Styling for each button */
+.header-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFFF00; /* Yellow background */
+    color: white; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.header-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+/* Footer transparency */
+footer {
+    background-color: rgba(0, 0, 0, 0.6); /* Keeping footer dark, but with transparency */
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/Mrt Line 7 Images/MRTLINE7BG.jpg'); /* Path to your GIF file */
+    background-size: cover; /* Ensures the GIF covers the entire screen */
+    background-position: center; /* Centers the GIF */
+    background-repeat: no-repeat; /* Prevents the GIF from repeating */
+    background-attachment: fixed; /* Keeps the GIF fixed in place when scrolling */
+    color: #ffffff; /* Ensures text is visible against the background */
+}
+
+/* Header styling */
+header {
+opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent overlay */
+    padding: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent overlay */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* General container styles */
+.logo-container {
+    position: relative; /* Needed for child absolute positioning */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Optional background */
+
+}
+
+/* Left logo styling */
+.logo-left {
+    position: relative;
+    top: 10;    /* Adjust the top position as needed */
+    left: 0;   /* Adjust the left position as needed */
+}
+
+/* Right logo styling */
+.logo-right {
+    position: relative;
+    top: 10;    /* Adjust the top position as needed */
+    right: 0;  /* Adjust the right position as needed */
+}
+
+/* Image styling */
+.logo-left img, .logo-right img {
+    width: 70px; /* Adjust size as needed */
+    height: auto;
+}
+
+
+
+.station-menu {
+    text-align: center;
+    margin: 20px 0;
+
+
+}
+
+.station-menu h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);; /* Optional background */
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px;
+    padding: 0 20px;
+
+}
+
+.menu-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRT Line 7 Stations</title>
+    <link rel="stylesheet" href="indexstyles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../images/AduLogo.png" alt="Adamson University Logo">
+            <h1>MRT Line 7 Stations</h1>
+            <img src="../images/DOSTLogo.png" alt="DOST Logo">
+</div>
+            
+
+<!-- Transit Line Links -->
+        <div class="transit-links">
+ 	    <a href="../index.html">Home</a>
+            <a href="../lrt-line-1/lrtline1index.html">LRT Line 1</a>
+            <a href="../lrt-line-2/lrtline2index.html">LRT Line 2</a>
+            <a href="../mrt-line-3/mrtline3index.html" >MRT Line 3</a>
+            <a href="../mrt-line-7/mrtline7index.html" >MRT Line 7</a>
+		
+        </div>
+    </header>
+
+    <main>
+<section class="lrt-map">
+<img src="../images/Mrt Line 7 Images/MRT 7 Map.jpg" alt="DOST Logo" width="500" height="auto"> 
+</section>
+        <section class="station-links">
+            <a href="quezon.html" class="station-btn">Quezon Memorial Circle Station</a>
+            <a href="university.html" class="station-btn">Univesity Avenue Station</a>
+            <a href="tandang.html" class="station-btn">Tandang Sora Station</a>
+            <a href="antonio.html" class="station-btn">Don Antonio Station</a>
+            <a href="batasan.html" class="station-btn">Batasan Station</a>
+            <a href="manggahan.html" class="station-btn">Manggahan Station</a>
+            <a href="carmen.html" class="station-btn">Don Carmen Station</a>
+            <a href="regalado.html" class="station-btn">Regalado Avenue Station</a>
+            <a href="mindanano.html" class="station-btn">Mindanao Avenue Station</a>
+            <a href="quirino.html" class="station-btn">Quirino Avenue Station</a>
+            <a href="sacred.html" class="station-btn">Sacred Heart Station</a>
+            <a href="tala.html" class="station-btn">Tala Station</a>
+            <a href="delmonte.html" class="station-btn">San Jose Del Monte Station</a>
+        </section>
+
+         </main>
+
+    <footer>
+        <p>© 2024 Adamson University. All rights reserved.</p>
+        </div>
+        
+    </footer>
+</body>
+</html>
