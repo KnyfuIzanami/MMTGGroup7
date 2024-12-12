@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRT Line 3 Stations</title>
+    <link rel="stylesheet" href="indexstyles.css">
+<style>
+
+main {
+opacity: 0.9;
+}
+
+
+.lrt-map {
+    text-align: center;
+    background-color: transparent; /* Make background transparent */
+    padding: 0; /* Remove padding if any */
+    margin: 0; /* Remove margin if any */
+    border: none; /* Remove any borders */
+}
+
+/* Ensure the station menu does not have a background or extra padding */
+.station-menu {
+    background-color: rgba(0, 0, 0, 0.6);; /* Remove any solid background */
+    padding: 0; /* Remove padding if any */
+    margin: 0; /* Remove margin if any */
+    text-align: center;
+}
+
+/* Ensure the header does not have a solid background */
+header {
+    background-color: transparent; /* No solid color */
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Spacing between buttons */
+    margin-top: 10px; /* Adjust spacing as needed */
+}
+
+/* Styling for each button */
+.header-btn {
+     display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.header-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+/* Footer transparency */
+footer {
+    background-color: rgba(0, 0, 0, 0.6); /* Keeping footer dark, but with transparency */
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/Slideshow/MRT-3 Train.jpg'); /* Path to your GIF file */
+    background-size: cover; /* Ensures the GIF covers the entire screen */
+    background-position: center; /* Centers the GIF */
+    background-repeat: no-repeat; /* Prevents the GIF from repeating */
+    background-attachment: fixed; /* Keeps the GIF fixed in place when scrolling */
+    color: #ffffff; /* Ensures text is visible against the background */
+}
+
+/* Header styling */
+header {
+opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent overlay */
+    padding: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent overlay */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* General container styles */
+.logo-container {
+    position: relative; /* Needed for child absolute positioning */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Optional background */
+
+}
+
+/* Left logo styling */
+.logo-left {
+    position: relative;
+    top: 10;    /* Adjust the top position as needed */
+    left: 0;   /* Adjust the left position as needed */
+}
+
+/* Right logo styling */
+.logo-right {
+    position: relative;
+    top: 10;    /* Adjust the top position as needed */
+    right: 0;  /* Adjust the right position as needed */
+}
+
+/* Image styling */
+.logo-left img, .logo-right img {
+    width: 70px; /* Adjust size as needed */
+    height: auto;
+}
+
+
+
+.station-menu {
+    text-align: center;
+    margin: 20px 0;
+
+
+}
+
+.station-menu h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);; /* Optional background */
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px;
+    padding: 0 20px;
+
+}
+
+.menu-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #18AFF0; /* Green background */
+    color: black; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: #E4D00A; /* Darker green on hover */
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    align-items: center; /* Centers the buttons vertically */
+    gap: 3px; /* Spacing between buttons */
+    margin-top: 10px; /* Adjust spacing as needed */
+    width: 100%; /* Ensures it takes the full width of the container */
+}
+
+h1 { 
+font-size: 40px;
+}
+</style>
+</head>
+<body>
+    <header>
+    <div class="logo-container">
+        <div class="logo-left">
+            <img src="../images/AduLogo.png" alt="Adamson University Logo">
+        </div>
+        <h1>MRT Line 3 Stations</h1>
+        <div class="logo-right">
+            <img src="../images/DOSTLogo.png" alt="DOST Logo">
+        </div>
+    </div>
+
+    <!-- Centered buttons -->
+    <div class="header-buttons">
+        <a href="../index.html" class="header-btn">Home</a>
+        <a href="../lrt-line-1/lrtline1index.html" class="header-btn">LRT Line 1</a>
+        <a href="../lrt-line-2/lrtline2index.html" class="header-btn">LRT Line 2</a>
+        <a href="../mrt-line-7/mrtline7index.html" class="header-btn">MRT Line 7</a>
+        <a href="../pnr/pnr.html" class="header-btn">PNR</a>
+    </div>
+</header>
+
+    <main>
+        <section class="lrt-map">
+            <img src="../images/Mrt Line 3 images/MRT-3 Map.jpg" alt="LRT Line 1 Map" width="1000" height="auto">
+        </section>
+</main>
+
+       <section class="station-menu">
+    <h2>Choose a Station:</h2>
+    <div class="menu-grid">
+        <a href="North Avenue.html" class="menu-btn">North Avenue Station</a>
+        <a href="Quezon Avenue.html" class="menu-btn">Quezon Avenue Station</a>
+        <a href="Kamuning.html" class="menu-btn">Kamuning Station</a>
+        <a href="Gil Puyat.html" class="menu-btn">Cubao Station</a>
+        <a href="Cubao.html" class="menu-btn">Santolan-Annapolis Station</a>
+        <a href="Ortigas.html" class="menu-btn">Ortigas Station</a>
+        <a href="Shaw Boulevard.html" class="menu-btn">Shaw Boulevard Station</a>
+        <a href="Boni.html" class="menu-btn">Boni Station</a>
+        <a href="Guadalupe.html" class="menu-btn">Guadalupe Station</a>
+        <a href="Ayala.html" class="menu-btn">Ayala Station</a>
+        <a href="Magallanes.html" class="menu-btn">Magallanes Station</a>
+        <a href="Taft.html" class="menu-btn">Taft Avenue</a>
+</section>
+    
+
+    <footer>
+        <p>© 2024 Adamson University. All rights reserved.</p>
+        
+           </footer>
+</body>
+</html>
